@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reni's Pastries Pricelist</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        header {
+            background-color: #ffd9e1;
+            color: #7a4b57;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+         h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: medium;
+        }
+
+        .hello-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            background: #fff0f5;
+        }
+
+        nav {
+            background: linear-gradient(to right, #ff85a2, #f7becc);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(255, 105, 135, 0.2);
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-left a:hover {
+            background-color: #ffe6ec;
+        }
+
+        .nav-right input[type="text"] {
+            padding: 6px;
+            border-radius: 8px;
+            border: 1px solid #ff85a2;
+        }
+
+        .nav-right button {
+            padding: 6px 10px;
+            background: white;
+            border: 1px solid #ff85a2;
+            border-radius: 8px;
+            color: #a52a2a;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .menulist {
+            background: #fffaf5;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .menulist table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menulist th, .menulist td {
+            border: 1px solid #ffccd5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menulist th {
+            background-color: #ffc1cc;
+            color: #7a4b57;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+  <div class="nav-left">
+    <img class="hello-icon" src="https://i.pinimg.com/originals/7d/73/86/7d7386100a718ac5b487fddc9bcb5d4b.gif">
+  </div>
+  <div class="nav-right">
+    <input type="text" placeholder="search..." />
+    <button>Search</button>
+  </div>
+</nav>
+<header>
+    <h1>Reni's Pastries</h1>
+    <p>Owner: Alfiona Ramirez</p>
+    <p>Since 2025</p>
+</header>
+<br>
+<div class="menulist">
+    <h3>Menu Pricelist</h3>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Chocolate Cake</td>
+            <td> 150</td>
+        </tr>
+        <tr>
+            <td>Blueberry Tart</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>Red Velvet Cupcake</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Croissant</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Cinnamon Roll</td>
+            <td>90</td>
+        </tr>
+    </table>
+</div>
+
+<div style="text-align:center; margin: 20px;">
+    <p id="hours"></p>
+    <p id="delivery" style="font-weight:bold; color:#a52a2a;"></p>
+</div>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
